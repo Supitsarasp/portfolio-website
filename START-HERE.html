@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>เริ่มใช้งานแฟ้มสะสมผลงาน</title>
+  <style>
+    @font-face{font-family:Thai;src:url('public/fonts/Thai-Regular.ttf')}@font-face{font-family:Thai;src:url('public/fonts/Thai-Bold.ttf');font-weight:700}
+    *{box-sizing:border-box}body{background:#faf8fa;color:#292632;font:17px/1.9 Thai,Tahoma,sans-serif;margin:0}main{max-width:900px;padding:40px 22px 70px;margin:auto}header{border-bottom:2px solid #92516b;padding-bottom:24px}h1{font-size:32px;line-height:1.5}h2{font-size:23px;color:#713c53}section{background:white;border:1px solid #e5dfe7;border-radius:16px;margin-top:24px;padding:26px}li{margin-bottom:10px}code{font-size:15px;background:#f4edf2;padding:2px 6px;border-radius:5px;overflow-wrap:anywhere}a{color:#92516b}strong{color:#713c53}.tag{color:#92516b;font-size:15px}.note{border-left:3px solid #92516b;padding-left:16px}table{border-collapse:collapse;width:100%;font-size:15px}td,th{text-align:left;padding:12px;border-bottom:1px solid #e5dfe7;overflow-wrap:anywhere}
+  </style>
+</head>
+<body><main>
+  <header><p class="tag">Supitsara Suanngam · แฟ้มสะสมผลงานภาษาไทย</p><h1>เปิดเว็บ แก้ข้อมูล และเพิ่มรูป<br>โดยไม่ต้องไล่แก้หลายไฟล์</h1><p>มี 8 โปรเจกต์ 2 กิจกรรม 7 ใบรับรอง และ 5 กลุ่มทักษะ พร้อมตัวตรวจข้อมูลก่อน Build</p></header>
+  <section><h2>1. เปิดเว็บครั้งแรก</h2><ol><li>แตก ZIP ทั้งหมดเป็นโฟลเดอร์ก่อน</li><li>ติดตั้ง Node.js รุ่น <code>^20.19.0</code> หรือ <code>&gt;=22.12.0</code></li><li>ดับเบิลคลิก <strong>START-WEBSITE.bat</strong></li><li>ครั้งแรกต้องใช้อินเทอร์เน็ตเพื่อรัน <code>npm.cmd ci</code></li></ol><p class="note">อย่าดับเบิลคลิก index.html เพราะ React ต้องรันผ่าน HTTP และอาจเห็นหน้าขาว</p></section>
+  <section><h2>2. แก้ข้อมูล</h2><p>แก้ชื่อ อีเมล ทักษะ การ์ด ลิงก์ และ PDF ที่ <code>src/data/portfolioContent.json</code> แล้วรัน <code>npm.cmd run validate:content</code> ตัวตรวจจะแจ้ง field ที่ผิดหรือ local asset ที่หายก่อน Build</p><p>JSON ไม่เปลี่ยน Resume PDF อัตโนมัติ หากแก้ Resume ให้ใช้ <code>public/files/Resume-TH.html</code> แล้วพิมพ์เป็น PDF ใหม่</p></section>
+  <section><h2>3. เพิ่มรูปกิจกรรม</h2><ol><li>เปิดเว็บในโหมด Dev</li><li>ไปที่ “กิจกรรม” แล้วกด “เพิ่ม / จัดการรูปกิจกรรม”</li><li>เลือก JPG/PNG/WebP สูงสุด 6 รูปต่อกิจกรรม ไฟล์ต้นฉบับไม่เกิน 15 MB</li><li>เขียนคำบรรยาย เรียงลำดับ แล้วกดบันทึก</li><li>Build และอัปโหลด <code>dist</code> ชุดใหม่เพื่อให้เว็บออนไลน์เปลี่ยน</li></ol><p class="note">เครื่องมือแก้รูปเปิดเฉพาะในเครื่องและมีมาตรการป้องกันการเขียนจาก Host/Origin/Token ที่ไม่ถูกต้อง</p></section>
+  <section><h2>4. สร้างเว็บ Production</h2><p>ดับเบิลคลิก <strong>BUILD-WEBSITE.bat</strong> หรือใช้ <code>npm.cmd run test</code> แล้ว <code>npm.cmd run build</code></p><p>นำเนื้อหาภายใน <code>dist</code> ขึ้น Static Host ห้ามนำ Source ZIP ไป deploy ตรง ๆ</p></section>
+  <section><h2>Contact และความเป็นส่วนตัว</h2><p>ฟอร์มจะเตรียมข้อความและเปิดแอปอีเมล ผู้ใช้ต้องกดส่งเอง เว็บไซต์ไม่แสดงผลส่งสำเร็จปลอมและยังไม่มี Backend ส่งตรง ข้อมูลเพิ่มเติมอยู่ในส่วน “ข้อมูลความเป็นส่วนตัว” บนหน้าเว็บ</p></section>
+  <section><h2>ไฟล์ที่ควรรู้จัก</h2><table><tr><th>ต้องการทำอะไร</th><th>เปิดไฟล์</th></tr><tr><td>คู่มือฉบับเต็ม</td><td><a href="README.md">README.md</a></td></tr><tr><td>ผลตรวจและสิ่งที่ยังต้องยืนยัน</td><td><a href="COMPLIANCE-AND-QA-REPORT.md">COMPLIANCE-AND-QA-REPORT.md</a></td></tr><tr><td>ขนาดและรายการไฟล์ที่นำออก</td><td><a href="SIZE-OPTIMIZATION.md">SIZE-OPTIMIZATION.md</a></td></tr><tr><td>Resume PDF</td><td><a href="public/files/Supitsara-Suanngam-Resume-TH.pdf">Supitsara-Suanngam-Resume-TH.pdf</a></td></tr><tr><td>ข้อมูลเว็บ</td><td><code>src/data/portfolioContent.json</code></td></tr></table></section>
+</main></body>
+</html>

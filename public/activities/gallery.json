@@ -1,0 +1,32 @@
+{
+  "version": 1,
+  "activities": {
+    "usc-event-staff": [],
+    "usc-student-mentor": [
+      {
+        "src": "activities/activity-2bd056e38237add618d7.jpg",
+        "caption": ""
+      }
+    ],
+    "Usc-event-staff": [
+      {
+        "src": "activities/activity-6efa7cea22fe235f2bed.jpg",
+        "caption": ""
+      },
+      {
+        "src": "activities/activity-aaac1ed61601b65fbae9.jpg",
+        "caption": ""
+      },
+      {
+        "src": "activities/activity-d42e8226801c0593aa56.jpg",
+        "caption": ""
+      }
+    ],
+    "Ict-showcase-2025-reporthub": [
+      {
+        "src": "activities/activity-6057c58b4f91500946b9.jpg",
+        "caption": ""
+      }
+    ]
+  }
+}

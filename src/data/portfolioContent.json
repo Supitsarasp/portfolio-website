@@ -1,0 +1,459 @@
+{
+  "personal": {
+    "name": "ศุภิสรา สวนงาม",
+    "role": "นักศึกษาสาขาเทคโนโลยีสารสนเทศและการสื่อสาร (ICT)",
+    "location": "กรุงเทพฯ ประเทศไทย",
+    "image": "profile.jpg",
+    "email": "Supitsara36655@gmail.com",
+    "linkedin": "",
+    "github": "https://github.com/Supitsarasp",
+    "intro": "นักศึกษา ICT ชั้นปีที่ 4 มหาวิทยาลัยศรีปทุมสนใจด้านเทคโนโลยีและการพัฒนาซอฟต์แวร์ ได้เรียนรู้และทำโปรเจกต์หลากหลายด้านตลอดการศึกษากำลังมองหาโอกาสในการเรียนรู้และเก็บเกี่ยวประสบการณ์จากการทำงานจริง ",
+    "heroHeadline": "ศุภิสรา สวนงาม",
+    "availability": "เปิดรับโอกาสสหกิจศึกษา ปี 2026–2027",
+    "focus": "Software Tester / QA",
+    "resume": "files/Supitsara-Suanngam-Resume-Harvard.pdf"
+  },
+  "about": {
+    "education": [
+      {
+        "institution": "มหาวิทยาลัยศรีปทุม",
+        "degree": "สาขาเทคโนโลยีสารสนเทศและการสื่อสาร (ICT)",
+        "location": "กรุงเทพฯ ประเทศไทย",
+        "period": "2023 – ปัจจุบัน",
+        "gpa": "3.96",
+        "isCurrent": true
+      },
+      {
+        "institution": "โรงเรียนบางพลีราษฎร์บำรุง",
+        "degree": "แผนการเรียนวิทยาศาสตร์–คณิตศาสตร์",
+        "location": "สมุทรปราการ ประเทศไทย",
+        "period": "2020 – 2023",
+        "gpa": "3.43",
+        "isCurrent": false
+      }
+    ],
+    "targetRoles": [
+      "Software Tester / QA",
+      "Front-End Developer",
+      "AI และ Workflow Automation",
+      "UX/UI Designer"
+    ],
+    "bio": [
+      "นักศึกษา ICT ชั้นปีที่ 4 สาขาเทคโนโลยีสารสนเทศและการสื่อสาร มหาวิทยาลัยศรีปทุม มีประสบการณ์จากการเรียนและการทำโปรเจกต์ด้านการพัฒนาเว็บไซต์และเว็บแอปพลิเคชัน โดยใช้ HTML, CSS, JavaScript และ React รวมถึงการออกแบบ UX/UI และการทำงานกับฐานข้อมูลด้วย SQL",
+      "นอกจากนี้ยังมีประสบการณ์ทำ Workflow Automation และพื้นฐานด้าน Software Testing และ API Testing จากการทำโปรเจกต์ระหว่างการศึกษา สนใจเรียนรู้และพัฒนาทักษะด้านเทคโนโลยีผ่านการลงมือทำและการทำงานจริง"
+    ]
+  },
+  "skills": {
+    "testing": [
+      "Manual Testing",
+      "Test Case Design",
+      "Functional Testing",
+      "Regression Testing",
+      "Bug Reporting"
+    ],
+    "tools": ["Postman", "Git / GitHub", "n8n", "AppSheet"],
+    "uxui": ["User Flow", "UI Design"],
+    "development": ["HTML", "CSS", "JavaScript", "React", "Python", "SQL"],
+    "softSkills": [
+      "การสื่อสาร",
+      "การทำงานเป็นทีม",
+      "การแก้ปัญหา",
+      "ความละเอียดรอบคอบ",
+      "การบริหารเวลา",
+      "การปรับตัว"
+    ]
+  },
+  "projects": [
+    {
+      "id": "todo-api-testing-portfolio",
+      "title": "การทดสอบ Todo API",
+      "category": "การทดสอบ API • pytest • FastAPI • CI",
+      "role": "Software Tester / QA Automation",
+      "year": "2026",
+      "description": "โปรเจกต์ทดสอบ REST API ของบริการ Todo ที่สร้างด้วย FastAPI มีแผนทดสอบชุด Automation ด้วย pytest รายงานบั๊ก 4 รายการ การแก้ไข Regression และ CI",
+      "image": "https://opengraph.githubassets.com/1/Supitsarasp/todo-api-testing-portfolio",
+      "overview": "โปรเจกต์ฝึกทดสอบ API โดยใช้บริการ Todo ที่ทำงานจริงด้วย FastAPI และทดสอบทั้ง Unit และ Integration ภายใน Repository มีแอปที่ใช้ทดสอบ แผนทดสอบ Test Case ที่เชื่อมโยงกับสคริปต์ รายงานบั๊ก บันทึกผลก่อนและหลังแก้ไข และ CI ผ่าน GitHub Actions",
+      "problem": "API อาจทำงานผิดพลาดในกรณีที่มักถูกมองข้าม เช่น ค่าขอบเขตของการแบ่งหน้า การเรียกข้อมูลที่ไม่มีอยู่ ชุดข้อมูลว่าง และการคำนวณตัวเลข",
+      "goal": "สร้างกระบวนการ QA สำหรับ API ที่รันซ้ำได้ ตั้งแต่ค้นหาบั๊ก บันทึกหลักฐาน แก้ไข ไปจนถึงยืนยันผลด้วย Regression Test",
+      "process": "วางแผนทดสอบ → ออกแบบ Test Case → ทำ Automation ด้วย pytest → ค้นหาบั๊ก → รายงานบั๊ก → แก้ไข → Regression → ตรวจ Coverage และ CI",
+      "solution": "พัฒนา Unit Test และ Integration Test สำหรับ 6 Endpoint ครอบคลุมการตรวจข้อมูลและค่าขอบเขต พร้อมเชื่อม Test Case กับการทดสอบใน pytest เพื่อให้ตรวจสอบย้อนกลับได้",
+      "result": "ชุดทดสอบตรวจพบบั๊ก 4 รายการ หลังแก้ไขผ่านครบ 34 การทดสอบ โดยมี Coverage 99% และตั้งค่า CI ให้รันอัตโนมัติเมื่อ Push โค้ด",
+      "learned": "ฝึกการทดสอบ REST API การวิเคราะห์ค่าขอบเขต Unit/Integration Test การสร้างหลักฐานบั๊กที่ทำซ้ำได้ การยืนยันผล Regression การวิเคราะห์ Coverage และพื้นฐาน CI",
+      "tools": [
+        "Python",
+        "FastAPI",
+        "pytest",
+        "pytest-cov",
+        "Pydantic",
+        "GitHub Actions"
+      ],
+      "links": {
+        "github": "https://github.com/Supitsarasp/todo-api-testing-portfolio"
+      },
+      "evidence": [
+        {
+          "title": "ซอร์สโค้ดและเอกสารบน GitHub",
+          "type": "github",
+          "description": "Source code ชุดทดสอบ แผนทดสอบ Test Case รายงานบั๊ก และบันทึกผลการทดสอบ",
+          "url": "https://github.com/Supitsarasp/todo-api-testing-portfolio"
+        }
+      ],
+      "context": "โปรเจกต์ฝึกทดสอบ API ที่รันซ้ำได้",
+      "summaryMetric": "34 การทดสอบผ่าน • Coverage 99%"
+    },
+    {
+      "id": "dekhor-website-testing",
+      "title": "dekhor-website-testing",
+      "category": "การทดสอบเว็บไซต์ • Manual Testing • Regression",
+      "role": "Software Tester",
+      "year": "2026",
+      "description": "โปรเจกต์ QA สำหรับเว็บไซต์ DekHor-Candy.com ที่เผยแพร่จริง ครอบคลุม 10 สถานการณ์ 19 Test Case การตรวจอัตโนมัติ 95 รายการ บั๊กที่ทำซ้ำได้ 6 รายการ และการรองรับ Regression",
+      "image": "https://opengraph.githubassets.com/1/Supitsarasp/dekhor-website-testing",
+      "overview": "แฟ้มผลงานการทดสอบเว็บไซต์ DekHor-Candy.com ที่เปิดใช้งานสาธารณะ ผสานการทดสอบผ่านเบราว์เซอร์ด้วยมือเข้ากับเครื่องมือตรวจเว็บไซต์ด้วย Python เพื่อให้ทำซ้ำผลทดสอบและข้อบกพร่องได้",
+      "problem": "เว็บไซต์แบบ Static อาจดูเหมือนใช้งานได้ แต่ยังมีไฟล์ประกอบที่เสีย โครงสร้าง DOM ไม่ถูกต้อง ปัญหาการเข้าถึง และ Metadata ที่ไม่สอดคล้องกัน",
+      "goal": "ทดสอบเว็บไซต์ที่เผยแพร่จริงอย่างเป็นระบบ พร้อมหลักฐานที่ผู้อื่นสามารถทำซ้ำเพื่อตรวจสอบได้",
+      "process": "วิเคราะห์ความต้องการ → กำหนดสถานการณ์ → ออกแบบ Test Case → ทดสอบเว็บไซต์จริง → ตรวจอัตโนมัติ → รายงานบั๊ก → สรุปผล → Regression",
+      "solution": "ออกแบบสถานการณ์ทดสอบการโหลดหน้า เมนูนำทาง ไฟล์ประกอบ Bootstrap Component คุณภาพ HTML และการเข้าถึง โดยมีสคริปต์ Python ช่วยตรวจสอบเว็บไซต์",
+      "result": "จัดทำ Test Case 19 กรณี รายงานบั๊ก 6 รายการ และการตรวจอัตโนมัติ 95 รายการ พบปัญหา เช่น รูปภาพเสีย ID ซ้ำ ป้ายกำกับเพื่อการเข้าถึงของ Modal การระบุภาษาของหน้า และรูปภาพที่ขาดข้อความอธิบาย",
+      "learned": "เรียนรู้การใช้ Manual Testing ร่วมกับ Automation ขนาดเล็ก เพื่อสร้างหลักฐานที่เชื่อถือได้และตรวจ Regression ซ้ำบนเว็บไซต์จริง",
+      "tools": [
+        "Chrome DevTools",
+        "Python",
+        "HTML",
+        "Accessibility Testing",
+        "Git/GitHub"
+      ],
+      "links": {
+        "github": "https://github.com/Supitsarasp/dekhor-website-testing",
+        "applicationUnderTest": "https://supitsarasp.github.io/DekHorrr-66/"
+      },
+      "evidence": [
+        {
+          "title": "เอกสารและชุดทดสอบบน GitHub",
+          "type": "github",
+          "description": "สถานการณ์ทดสอบ Test Case รายงานบั๊ก หลักฐาน ตารางทดสอบ และสคริปต์ตรวจเว็บไซต์",
+          "url": "https://github.com/Supitsarasp/dekhor-website-testing"
+        },
+        {
+          "title": "เว็บไซต์ที่ใช้ทดสอบ",
+          "type": "website",
+          "description": "เว็บไซต์ DekHor-Candy.com ที่ใช้เป็นระบบสำหรับทดสอบ",
+          "url": "https://supitsarasp.github.io/DekHorrr-66/"
+        }
+      ],
+      "context": "ทดสอบเว็บไซต์ที่เผยแพร่จริง",
+      "summaryMetric": "19 Test Case • 95 การตรวจอัตโนมัติ"
+    },
+    {
+      "id": "login-registration-testing",
+      "title": "login-registration-testing",
+      "category": "Manual Testing • การทดสอบฟังก์ชัน",
+      "role": "Software Tester",
+      "year": "2026",
+      "description": "โปรเจกต์ฝึก Manual QA สำหรับการสมัครสมาชิกและเข้าสู่ระบบ ครอบคลุมความต้องการ การทดสอบแบบ Positive/Negative, Test Case 15 กรณี รายงานบั๊ก 3 รายการ และรายงานสรุปผล",
+      "image": "https://opengraph.githubassets.com/1/Supitsarasp/login-registration-testing",
+      "overview": "โปรเจกต์ Manual Testing ที่เน้นการยืนยันตัวตน 2 ขั้นตอนสำคัญ ได้แก่ การสมัครสมาชิกและการเข้าสู่ระบบ มีเอกสารความต้องการ สถานการณ์ Test Case รายงานบั๊ก และแอป Demo ที่สร้างสำหรับฝึกทดสอบ",
+      "problem": "แบบฟอร์มยืนยันตัวตนอาจมีข้อผิดพลาดเมื่อกรอกข้อมูลไม่ถูกต้อง ขาดการตรวจสอบข้อมูล ใช้บัญชีซ้ำ หรือแสดงข้อความผิดพลาดไม่เหมาะสม แม้เส้นทางการใช้งานปกติจะทำงานได้",
+      "goal": "แสดงพื้นฐาน Manual Testing อย่างชัดเจน ด้วย Test Case ที่ผู้ทดสอบคนอื่นสามารถทำตามและทำซ้ำผลได้",
+      "process": "ทบทวนความต้องการ → กำหนดสถานการณ์ → ออกแบบ Positive/Negative Test Case → ทดสอบด้วยมือ → รายงานบั๊ก → สรุปผลทดสอบ",
+      "solution": "ออกแบบ 10 สถานการณ์และ Test Case 15 กรณี ครอบคลุมข้อมูลสมัครสมาชิกและเข้าสู่ระบบทั้งที่ถูกต้องและไม่ถูกต้อง แล้วตรวจผลกับแอป Demo ที่แนบในโปรเจกต์",
+      "result": "ทดสอบผ่าน 12 จาก 15 กรณี และบันทึกบั๊ก 3 รายการ รวมถึงปัญหาความรุนแรงสูงที่หน้าเว็บกลายเป็นหน้าว่างเมื่อสมัครด้วยอีเมลซ้ำ",
+      "learned": "ฝึกวิเคราะห์ความต้องการ ออกแบบการทดสอบแบบ Positive/Negative เขียนขั้นตอนที่ทำซ้ำได้ ประเมินความรุนแรง รายงานบั๊ก และสรุปผลการทดสอบ",
+      "tools": [
+        "Manual Testing",
+        "Chrome",
+        "Excel",
+        "Google Sheets",
+        "Git/GitHub"
+      ],
+      "links": {
+        "github": "https://github.com/Supitsarasp/login-registration-testing",
+        "liveDemo": "https://supitsarasp.github.io/login-registration-testing/"
+      },
+      "evidence": [
+        {
+          "title": "ซอร์สโค้ดและเอกสารบน GitHub",
+          "type": "github",
+          "description": "ความต้องการ Test Case การทดสอบ Positive/Negative รายงานบั๊ก สรุปผล และตารางทดสอบ",
+          "url": "https://github.com/Supitsarasp/login-registration-testing"
+        },
+        {
+          "title": "แอป Demo สำหรับฝึกทดสอบ",
+          "type": "website",
+          "description": "แอปสำหรับฝึกทดสอบที่ใส่ข้อบกพร่องไว้ให้สอดคล้องกับรายงานบั๊กในโปรเจกต์",
+          "url": "https://supitsarasp.github.io/login-registration-testing/"
+        }
+      ],
+      "context": "แอป Demo สำหรับฝึกทดสอบ",
+      "summaryMetric": "15 Test Case • 3 รายงานบั๊ก"
+    },
+    {
+      "id": "sql-school-management-system",
+      "title": "sql-school-management-system",
+      "category": "การออกแบบฐานข้อมูล • SQL • การวิเคราะห์ระบบ",
+      "role": "ผู้ออกแบบฐานข้อมูล / ผู้ทดสอบซอฟต์แวร์",
+      "year": "2026",
+      "description": "โปรเจกต์ฐานข้อมูลในมหาวิทยาลัยสำหรับจัดการนักเรียน ครู วิชา ห้องเรียน ตารางเรียน การลงทะเบียน การเข้าเรียน คะแนน และประวัติการศึกษา",
+      "image": "https://opengraph.githubassets.com/1/Supitsarasp/SQL-School-Management-System",
+      "overview": "โปรเจกต์ออกแบบฐานข้อมูลเชิงสัมพันธ์ของระบบบริหารโรงเรียน ครอบคลุมบทบาทนักเรียน ครู และผู้ดูแลระบบ รวมถึง Entity ที่ใช้จัดการงานด้านการศึกษา",
+      "problem": "ข้อมูลโรงเรียนมีความเชื่อมโยงกันสูง หากไม่มีการออกแบบฐานข้อมูลเชิงสัมพันธ์ที่เป็นระบบ ข้อมูลนักเรียน ตารางเรียน วิชา การลงทะเบียน การเข้าเรียน และสิทธิ์ใช้งานอาจไม่สอดคล้องกันหรือดูแลได้ยาก",
+      "goal": "ฝึกวิเคราะห์ระบบและออกแบบฐานข้อมูลเชิงสัมพันธ์ โดยกำหนด Entity, Key ความสัมพันธ์ และเอกสารประกอบให้ชัดเจน",
+      "process": "วิเคราะห์ความต้องการ → วิเคราะห์ Entity และ Attribute → ออกแบบ ER Diagram → ออกแบบ PK/FK → เชื่อมความสัมพันธ์ → จัดทำ Data Dictionary → จัดทำเอกสาร",
+      "solution": "ออกแบบ Entity หลัก ได้แก่ Student, Teacher, Admin, Classroom, Subject, Schedule, School_Record และ Registration พร้อมความสัมพันธ์ผ่าน Primary Key, Foreign Key และ Composite Key",
+      "result": "ได้เอกสารออกแบบฐานข้อมูลที่อธิบายโมเดล Entity ความสัมพันธ์ บทบาทผู้ใช้ และโครงสร้างข้อมูลของระบบบริหารโรงเรียน",
+      "learned": "ฝึกสร้างโมเดลเชิงสัมพันธ์ ER Diagram การวิเคราะห์ Entity/Attribute การกำหนด Primary/Foreign Key การทำ Data Dictionary และการคิดด้าน QA ที่เกี่ยวข้องกับฐานข้อมูล",
+      "tools": [
+        "SQL",
+        "SQL Server",
+        "ER Diagram",
+        "Database Design",
+        "Microsoft Excel"
+      ],
+      "links": {
+        "github": "https://github.com/Supitsarasp/SQL-School-Management-System"
+      },
+      "evidence": [
+        {
+          "title": "ซอร์สโค้ดและเอกสารบน GitHub",
+          "type": "github",
+          "description": "README และเอกสารโปรเจกต์ระบบบริหารโรงเรียนฉบับเต็ม",
+          "url": "https://github.com/Supitsarasp/SQL-School-Management-System"
+        }
+      ],
+      "context": "โปรเจกต์ด้านฐานข้อมูลในมหาวิทยาลัย",
+      "summaryMetric": "ER Diagram • PK/FK • Data Dictionary"
+    },
+    {
+      "id": "shareu-university-sharing-app",
+      "title": "ShareU",
+      "category": "การออกแบบ UX/UI • โมเดลธุรกิจ • การวิเคราะห์ระบบ",
+      "role": "สมาชิกทีม / UX/UI Designer",
+      "year": "2025",
+      "description": "แอปพลิเคชันยืม-คืนของในมหาวิทยาลัยศรีปทุม เพื่ออำนวยความสะดวกในการยืมสิ่งของและสร้างรายได้เสริม",
+      "image": "assets/Share U.png",
+      "overview": "แพลตฟอร์มที่ช่วยให้นักศึกษายืมและให้ยืมของที่จำเป็นต่อการใช้ชีวิตในมหาวิทยาลัย โดยเน้นความประหยัด รวดเร็ว และน่าเชื่อถือให้จบลงในแอปเดียว",
+      "problem": "นักศึกษาอยากหารายได้เสริมจากของที่ไม่ได้ใช้ ในขณะที่ผู้ยืมพบว่าของที่ต้องการแพงเกินกว่าจะซื้อใหม่หรือไม่คุ้มค่า และไม่รู้แหล่งยืมที่น่าเชื่อถือ",
+      "goal": "สร้างแพลตฟอร์มที่ช่วยลดปัญหาค่าใช้จ่าย เพิ่มความสะดวกสบาย สร้างรายได้เสริม และสร้าง Community ในมหาวิทยาลัย พร้อมระบบความปลอดภัยและการรับประกัน",
+      "process": "ค้นหาสิ่งของที่ต้องการ → กดจองและยืนยันราคา → นัดเจอเพื่อแลกเปลี่ยนและรับ-ส่งของ → นำของไปคืนเมื่อใช้เสร็จและทำการรีวิว",
+      "solution": "ออกแบบต้นแบบหน้าจอแอปพลิเคชัน (Prototype UX/UI) ที่รองรับการสลับโหมดผู้ยืม-ผู้ให้ยืม พร้อมระบบค้นหาแบบเรียลไทม์ กระเป๋าเงิน (Wallet) ระบบสะสมคะแนน และระบบยืนยันตัวตน",
+      "result": "นำเสนอ Business Model ที่ชัดเจน ครอบคลุมรายได้ (เช่น ค่าธรรมเนียมการยืม-คืน 10%, ค่าปรับ) โครงสร้างต้นทุน และกลุ่มพันธมิตรที่เสนอใน Business Model เช่น มหาวิทยาลัยศรีปทุม",
+      "learned": "เรียนรู้การวิเคราะห์ Pain Points ของผู้ใช้งาน การสร้าง Value Proposition (เช่น ระบบน่าเชื่อถือ, ป้องกันความเสียหาย) และการออกแบบ UX/UI ต้นแบบ",
+      "tools": [
+        "UX/UI Design",
+        "Business Model Canvas",
+        "Application Prototype"
+      ],
+      "links": {
+        "presentation": "assets/Share U.pdf"
+      },
+      "evidence": [
+        {
+          "title": "เอกสารนำเสนอ ShareU",
+          "type": "pdf",
+          "description": "สไลด์นำเสนอโปรเจกต์ ShareU ประกอบด้วยโมเดลธุรกิจ ปัญหาของผู้ใช้ (Pain Points) และต้นแบบ UX/UI",
+          "url": "assets/Share U.pdf",
+          "sizeLabel": "PDF ต้นฉบับ 20,453,252 bytes (ประมาณ 19.51 MiB)"
+        }
+      ],
+      "context": "โปรเจกต์ออกแบบต้นแบบแอป",
+      "summaryMetric": "Prototype • Business Model Canvas"
+    },
+    {
+      "id": "littlekids-child-development-app",
+      "title": "LITTLEKIDS",
+      "category": "การออกแบบแอปมือถือ • UX/UI • การวิเคราะห์ระบบ",
+      "role": "UX/UI Designer / นักวิเคราะห์ระบบ",
+      "year": "",
+      "description": "แอปพลิเคชันที่ถูกออกแบบมาเพื่อส่งเสริมพัฒนาการของเด็กในด้านภาษา ความคิดสร้างสรรค์ และทักษะการเรียนรู้ ผ่านเนื้อหาที่สนุกสนานและเหมาะสมกับวัย",
+      "image": "assets/LITTLEKIDS.png",
+      "overview": "แอปพลิเคชันส่งเสริมพัฒนาการเด็กที่มีสีสันสดใสและฟังก์ชันที่ใช้งานง่าย ประกอบด้วยหมวดหมู่หลัก เช่น คำศัพท์ (Vocab), นิทาน (Story), เพลง (Music), หนังสือ (Book) และแนะนำสินค้า (Product)",
+      "problem": "การหาเครื่องมือที่ตอบโจทย์และเหมาะสมเพื่อส่งเสริมพัฒนาการของเด็กกลุ่มเป้าหมายในด้านต่างๆ อย่างมีประสิทธิภาพ",
+      "goal": "เพื่อให้เด็กสามารถเรียนรู้และสนุกไปพร้อมกันในทุกช่วงวัย ผ่านเนื้อหาที่ได้รับการคัดสรรมาอย่างดีในแอปพลิเคชัน",
+      "process": "การทำงานเริ่มจากผู้ใช้งานเข้าสู่ระบบ -> ระบบแสดงหน้าเมนูหลัก -> ผู้ใช้เลือกหมวดหมู่ (เช่น Vocab, Story, Book, Music) -> ระบบจัดการการทำงานและดึงข้อมูลจากฐานข้อมูลเพื่อแสดงผล",
+      "solution": "ออกแบบโครงสร้างระบบ (Workflow) และต้นแบบหน้าจอ (UX/UI) ที่แบ่งหมวดหมู่ย่อยอย่างชัดเจน เช่น หมวดคำศัพท์ (สัตว์, สี, อาหาร), หมวดหนังสือ (ระบายสี, นิทาน), และหมวดสินค้า (ของใช้เด็ก, ของเล่น)",
+      "result": "ได้แผนผังการทำงาน (Flowchart) ของระบบแอปพลิเคชันที่สมบูรณ์ และการออกแบบหน้าจอ (Design) ที่มีการจัดวางเมนูต่างๆ ให้เข้าถึงง่ายและดึงดูดสายตา",
+      "learned": "การออกแบบการไหลของข้อมูล (Workflow) และการวางโครงสร้างฐานข้อมูลสำหรับการเรียนรู้ของเด็ก รวมถึงการออกแบบ UX/UI ที่เป็นมิตรกับผู้ใช้งาน",
+      "tools": [
+        "UX/UI Design",
+        "System Analysis",
+        "Flowchart Design",
+        "Prototyping"
+      ],
+      "links": {
+        "presentation": "assets/LittleKids .pdf"
+      },
+      "evidence": [
+        {
+          "title": "เอกสารนำเสนอ LITTLEKIDS",
+          "type": "pdf",
+          "description": "เอกสารนำเสนอโปรเจกต์ LITTLEKIDS ประกอบด้วยภาพรวมแอป แผนผังการทำงาน (Workflow) โครงสร้างฐานข้อมูล และต้นแบบหน้าจอ",
+          "url": "assets/LittleKids .pdf",
+          "sizeLabel": "PDF ต้นฉบับ 87,545,147 bytes (ประมาณ 83.49 MiB)"
+        }
+      ],
+      "context": "โปรเจกต์ออกแบบต้นแบบแอป",
+      "summaryMetric": "UX/UI • Workflow • โครงสร้างฐานข้อมูล"
+    },
+    {
+      "id": "reporthub",
+      "title": "REPORTHUB",
+      "category": "AI Automation • Workflow • ระบบสารสนเทศ",
+      "role": "ผู้พัฒนาโครงงาน",
+      "year": "2024",
+      "description": "ระบบจัดการเรื่องร้องเรียนอัตโนมัติด้วย AI เพื่อมหาวิทยาลัยอัจฉริยะและยั่งยืน ช่วยลดเวลาคัดกรองและเพิ่มประสิทธิภาพการทำงาน",
+      "image": "assets/รับเรื่องร้องเรียน.png",
+      "overview": "ระบบบริหารจัดการเรื่องร้องเรียนแบบ One-Stop Service ที่ประยุกต์ใช้เทคโนโลยี AI และ Workflow Automation เพื่อรับเรื่อง คัดกรอง และส่งต่อข้อมูลโดยอัตโนมัติ",
+      "problem": "ระบบแบบเดิมใช้เจ้าหน้าที่คัดกรองทำให้เกิดความล่าช้า (ใช้เวลา 1-2 วัน) ขาดความโปร่งใส สร้างภาระงานให้เจ้าหน้าที่ และผู้ใช้งานไม่สามารถติดตามความก้าวหน้าได้",
+      "goal": "เพื่อออกแบบและพัฒนาระบบจัดการเรื่องร้องเรียนแบบ One-Stop Service ด้วย AI และประเมินประสิทธิภาพ รวมถึงศึกษาความสอดคล้องกับเป้าหมายการพัฒนาที่ยั่งยืน (SDGs)",
+      "process": "วิเคราะห์ระบบเดิม → ออกแบบและพัฒนาระบบด้วยโปรแกรม n8n (LINE OA, AI Classification, Workflow Automation) → ทดสอบและประเมินผลกับเรื่องร้องเรียน 200 เรื่อง → วิเคราะห์ความสอดคล้องกับ SDGs",
+      "solution": "พัฒนาระบบ REPORTHUB ที่รับเรื่องผ่าน LINE Official Account ใช้ AI Agesnt (Natural Language Processing) ในการวิเคราะห์ประเภท และใช้ Workflow Automation (n8n) ส่งต่อหน่วยงานพร้อมจัดเก็บข้อมูล",
+      "result": "AI สามารถจัดประเภทแม่นยำ 92-95%, ลดเวลาประมวลผลได้ 99.8% (จาก 1-2 วันเหลือ 3-5 วินาที), ความพึงพอใจเพิ่มขึ้น 87% และลดภาระงานคัดกรองของเจ้าหน้าที่ได้ 100%",
+      "learned": "การประยุกต์ใช้ AI Agent (Natural Language Processing), การสร้าง Workflow Automation ด้วย n8n, การบูรณาการผ่าน LINE OA, และการพัฒนาระบบที่ตอบสนองเป้าหมาย SDGs (4, 9, 11, 16)",
+      "tools": [
+        "n8n",
+        "AI Agent (Natural Language Processing)",
+        "LINE Official Account",
+        "Workflow Automation"
+      ],
+      "links": {},
+      "evidence": [
+        {
+          "title": "โปสเตอร์โครงงาน REPORTHUB",
+          "type": "image",
+          "description": "โปสเตอร์นำเสนอรายละเอียดของระบบ REPORTHUB คณะเทคโนโลยีสารสนเทศ มหาวิทยาลัยศรีปทุม",
+          "url": "assets/รับเรื่องร้องเรียน.png"
+        }
+      ],
+      "context": "โครงงานคณะเทคโนโลยีสารสนเทศ มหาวิทยาลัยศรีปทุม",
+      "summaryMetric": "ลดเวลาประมวลผลเรื่องร้องเรียน 99.8% (เหลือ 3-5 วินาที)"
+    },
+    {
+      "id": "dekhor",
+      "title": "DekHor-Candy.com",
+      "category": "การพัฒนาเว็บไซต์ • HTML • CSS • Bootstrap",
+      "role": "นักพัฒนาเว็บไซต์",
+      "year": "2025",
+      "description": "เว็บไซต์ภาษาไทยแนะนำการใช้ชีวิตในหอพัก ครอบคลุมของจำเป็นก่อนย้ายเข้า การวางแผน อาหารง่าย ๆ ทักษะชีวิต ประสบการณ์ร่วม และข้อมูลเกี่ยวกับเว็บไซต์",
+      "image": "https://opengraph.githubassets.com/1/Supitsarasp/DekHorrr-66",
+      "overview": "เว็บไซต์ภาษาไทย 6 หน้า ออกแบบเป็นคู่มือใช้ชีวิตในหอพักที่นำไปใช้ได้จริง และใช้เป็นระบบสำหรับทดสอบในโปรเจกต์ QA แยกชื่อการทดสอบเว็บไซต์ DekHor",
+      "problem": "นักศึกษาที่กำลังย้ายเข้าหอพักต้องค้นหาข้อมูลจากหลายแหล่ง ทั้งของที่ควรเตรียม เมนูอาหารง่าย ๆ และทักษะการใช้ชีวิตประจำวัน",
+      "goal": "สร้างเว็บไซต์ภาษาไทยที่เปิดอ่านง่าย และจัดข้อมูลที่เป็นประโยชน์ต่อชีวิตในหอพักให้เป็นหมวดหมู่ชัดเจน",
+      "process": "วางแผนเนื้อหา → ออกแบบโครงสร้างหลายหน้า → พัฒนาด้วย HTML/CSS → ใช้ Bootstrap Component → เผยแพร่ผ่าน GitHub Pages → ทดสอบ QA",
+      "solution": "พัฒนาเว็บไซต์ Static 6 หน้าด้วย HTML, CSS และ Bootstrap 5 สำหรับของจำเป็นก่อนย้ายเข้า การวางแผน อาหาร ทักษะชีวิต ประสบการณ์ร่วม และข้อมูลโปรเจกต์",
+      "result": "เผยแพร่เว็บไซต์สู่สาธารณะผ่าน GitHub Pages และนำไปใช้เป็นระบบสำหรับทดสอบในแฟ้มผลงาน QA ที่ทดสอบเว็บไซต์จริงอีกโปรเจกต์หนึ่ง",
+      "learned": "ฝึกพื้นฐาน Front-End การจัดโครงสร้างข้อมูลหลายหน้า การใช้ Bootstrap การเผยแพร่เว็บ Static และการเชื่อมงานพัฒนาเข้ากับงานทดสอบซอฟต์แวร์",
+      "tools": ["HTML", "CSS", "Bootstrap 5", "JavaScript", "GitHub Pages"],
+      "links": {
+        "github": "https://github.com/Supitsarasp/DekHorrr-66",
+        "liveWebsite": "https://supitsarasp.github.io/DekHorrr-66/"
+      },
+      "evidence": [
+        {
+          "title": "ซอร์สโค้ดและเอกสารบน GitHub",
+          "type": "github",
+          "description": "ซอร์สโค้ดของเว็บไซต์ Static ทั้ง 6 หน้า",
+          "url": "https://github.com/Supitsarasp/DekHorrr-66"
+        },
+        {
+          "title": "เว็บไซต์ที่เผยแพร่จริง",
+          "type": "website",
+          "description": "เว็บไซต์ที่เผยแพร่ผ่าน GitHub Pages",
+          "url": "https://supitsarasp.github.io/DekHorrr-66/"
+        }
+      ],
+      "context": "โปรเจกต์พัฒนาเว็บไซต์",
+      "summaryMetric": "เว็บไซต์ภาษาไทย 6 หน้า"
+    }
+  ],
+  "activities": [
+    {
+      "id": "Usc-event-staff",
+      "year": "2025",
+      "title": "Usc-event-staff",
+      "organization": "มหาวิทยาลัยศรีปทุม",
+      "role": "ทีมงาน USC TEAM STAFF",
+      "description": "ร่วมเป็นทีมงานสนับสนุนกิจกรรม ประสานงานกับสมาชิกในทีม และช่วยดูแลการดำเนินงานหน้างาน",
+      "skills": ["การประสานงาน", "การทำงานเป็นทีม", "ความรับผิดชอบ"]
+    },
+    {
+      "id": "usc-student-mentor",
+      "year": "2025",
+      "title": "Usc-student-mentor",
+      "organization": "มหาวิทยาลัยศรีปทุม",
+      "role": "ทีมงาน USC TEAM STAFF / พี่เลี้ยงนักศึกษา",
+      "description": "ทำหน้าที่พี่เลี้ยงให้กับนักศึกษาชั้นปีที่ 1 ให้คำแนะนำและช่วยเหลือตลอดภาคเรียน ตอบข้อสงสัยเกี่ยวกับรายวิชาและการใช้ชีวิตในมหาวิทยาลัย",
+      "skills": ["การสื่อสาร", "การให้คำแนะนำ", "การดูแลผู้อื่น"]
+    },
+    {
+      "id": "Ict-showcase-2025-reporthub",
+      "year": "2025",
+      "title": "ICT SHOWCASE 2025: Innovation Challenge",
+      "organization": "คณะเทคโนโลยีสารสนเทศ มหาวิทยาลัยศรีปทุม (SPU SIT)",
+      "role": "ผู้นำเสนอผลงาน (Exhibitor / Presenter)",
+      "description": "จัดแสดงและนำเสนอโครงงาน REPORTHUB (ระบบจัดการเรื่องร้องเรียนอัตโนมัติด้วย AI) ในงานแสดงนวัตกรรมของคณะเทคโนโลยีสารสนเทศ เพื่อถ่ายทอดแนวคิดการประยุกต์ใช้ AI และ Workflow Automation แก่ผู้ร่วมงานและคณะกรรมการ",
+      "skills": [
+        "การนำเสนอผลงาน (Presentation)",
+        "การสื่อสารทางเทคนิค (Technical Communication)",
+        "การตอบคำถามและแก้ปัญหาเฉพาะหน้า"
+      ]
+    }
+  ],
+  "certificates": [
+    {
+      "title": "พื้นฐาน Cybersecurity",
+      "issuer": "Google",
+      "date": "2024",
+      "image": "assets/Foundations of Cybersecurity.png",
+      "url": "https://s3.amazonaws.com/coursera_assets/meta_images/generated/CERTIFICATE_LANDING_PAGE/CERTIFICATE_LANDING_PAGE~VOJTLHY7SAXP/CERTIFICATE_LANDING_PAGE~VOJTLHY7SAXP.jpeg",
+      "originalTitle": "Foundations of Cybersecurity"
+    },
+    {
+      "title": "การจัดการความเสี่ยงด้านความปลอดภัย",
+      "issuer": "Google",
+      "date": "2024",
+      "image": "assets/Play It Safe Manage Security Risks.png",
+      "url": "https://s3.amazonaws.com/coursera_assets/meta_images/generated/CERTIFICATE_LANDING_PAGE/CERTIFICATE_LANDING_PAGE~ZUMDSIV8T6YK/CERTIFICATE_LANDING_PAGE~ZUMDSIV8T6YK.jpeg",
+      "originalTitle": "Play It Safe: Manage Security Risks"
+    },
+    {
+      "title": "เครือข่ายและความปลอดภัยเครือข่าย",
+      "issuer": "Google",
+      "date": "2024",
+      "image": "assets/Connect and Protect Networks and Network Security.png",
+      "url": "https://s3.amazonaws.com/coursera_assets/meta_images/generated/CERTIFICATE_LANDING_PAGE/CERTIFICATE_LANDING_PAGE~YEYLG1P8UF2Y/CERTIFICATE_LANDING_PAGE~YEYLG1P8UF2Y.jpeg",
+      "originalTitle": "Connect and Protect: Networks and Network Security"
+    },
+    {
+      "title": "ICDL: การใช้งาน Spreadsheets",
+      "issuer": "Huawei",
+      "date": "2025",
+      "image": "assets/ICDL.jpg",
+      "url": "assets/ICDL.jpg",
+      "originalTitle": "ICDL Certificate - Spreadsheets"
+    },
+    {
+      "title": "พัฒนาการและแนวคิดพื้นฐานของ Cloud Computing",
+      "issuer": "HUAWEI",
+      "date": "2025",
+      "image": "assets/Development and Basic Concepts of Cloud Computing.png",
+      "url": "assets/Development and Basic Concepts of Cloud Computing.png",
+      "originalTitle": "Development and Basic Concepts of Cloud Computing"
+    },
+    {
+      "title": "พื้นฐาน Cloud: พัฒนาการและแนวคิดพื้นฐาน (โครงการ CRA)",
+      "issuer": "HUAWEI",
+      "date": "2025",
+      "image": "assets/Cloud Basics Development and Basic Concepts (CRA Training Program).png",
+      "url": "assets/Cloud Basics Development and Basic Concepts (CRA Training Program).png",
+      "originalTitle": "Cloud Basics: Development and Basic Concepts (CRA Training Program)"
+    },
+    {
+      "title": "HUAWEI CLOUD: ใบรับรองนักพัฒนา HCCDA-AI",
+      "issuer": "HUAWEI",
+      "date": "2026",
+      "image": "assets/Huawei.jpg",
+      "url": "assets/Huawei.jpg",
+      "originalTitle": "HUAWEI CLOUD Developer Certification - HCCDA-AI"
+    }
+  ]
+}

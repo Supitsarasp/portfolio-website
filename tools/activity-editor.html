@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="th">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>เพิ่มรูปกิจกรรม | แฟ้มสะสมผลงาน</title>
+<style>
+@font-face{font-family:Thai;src:url('/fonts/Thai-Regular.ttf')}@font-face{font-family:Thai;src:url('/fonts/Thai-Bold.ttf');font-weight:700}
+*{box-sizing:border-box}body{margin:0;background:#faf8fa;color:#292632;font:16px/1.8 Thai,Tahoma,sans-serif}main{max-width:1000px;margin:auto;padding:36px 22px 80px}h1,h2,p{margin-top:0}h1{font-size:30px;line-height:1.5}h2{font-size:20px}a{color:#92516b}p{color:#625d6b}button,input,select{font:inherit}button,.pick{border:1px solid #d8cbd7;background:white;color:#292632;border-radius:10px;padding:10px 16px;cursor:pointer;min-height:46px}button:disabled{opacity:.5;cursor:wait}.primary{background:#92516b;color:white;border-color:#92516b}.card{background:white;border:1px solid #e5dfe7;border-radius:16px;padding:24px;margin:24px 0}.hint{font-size:14px}.row{display:flex;align-items:center;gap:12px;flex-wrap:wrap}label{display:block;font-weight:700;margin-bottom:8px}select,input[type=text]{border:1px solid #d8cbd7;border-radius:8px;padding:12px;width:100%;background:white}select{margin-bottom:14px}#photos{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;margin:24px 0}.photo{border:1px solid #e5dfe7;border-radius:12px;padding:12px;background:white}.photo img{width:100%;aspect-ratio:4/3;object-fit:contain;background:#f5f1f5;border-radius:8px}.photo label{font-size:14px;margin-top:12px}.photo button{padding:7px 10px;font-size:14px;min-height:42px}.photo .row{margin-top:12px}.status{padding:14px;border-radius:10px;background:#f0e7ee;white-space:pre-line;color:#4b3040}.status:empty{display:none}:focus-visible{outline:3px solid #92516b;outline-offset:3px}.steps{padding-left:23px}.steps li{padding-bottom:7px}.file-input{position:absolute;opacity:0;width:1px;height:1px}input[type=file]:focus-visible+.pick{outline:3px solid #92516b;outline-offset:3px}.pick{display:inline-block;margin:0;font-weight:400}.actions{position:sticky;bottom:12px;box-shadow:0 4px 20px #29152615;border:1px solid #e5dfe7;background:white;padding:16px;border-radius:12px}#empty{padding:24px;text-align:center;border:1px dashed #baa1b3;border-radius:12px}#description{margin-bottom:0}@media(max-width:600px){#photos{grid-template-columns:1fr}h1{font-size:26px}.card{padding:18px}}
+</style></head>
+<body><main><a href="/#activities">← กลับไปดูกิจกรรมในเว็บ</a><h1 style="margin-top:20px">เพิ่มรูปกิจกรรม</h1><p>เลือกรูป เขียนคำบรรยาย แล้วบันทึกลงโปรเจกต์ รูปจะอยู่ครบเมื่อเปิดเว็บครั้งถัดไป</p>
+<div class="card"><label for="activity">1. เลือกกิจกรรม</label><select id="activity" disabled><option>กำลังโหลดกิจกรรม…</option></select><p id="description" class="hint"></p></div>
+<div class="card"><h2>2. เลือกรูปและเขียนคำบรรยาย</h2><p class="hint">รองรับ JPG, PNG และ WebP สูงสุด 6 รูปต่อกิจกรรม ไฟล์ต้นฉบับไม่เกิน 15 MB ต่อรูป ระบบจะย่อขนาดด้านยาวให้ไม่เกิน 1,600 พิกเซลและแปลงเป็น JPG ให้เอง</p>
+<input id="files" class="file-input" type="file" accept="image/jpeg,image/png,image/webp" multiple disabled><label class="pick" for="files">＋ เลือกรูปจากเครื่อง</label><p class="hint" style="margin-top:12px">รูปแรกเป็นรูปหลัก ใช้ปุ่มเลื่อนไปก่อน/หลังเพื่อเปลี่ยนลำดับ</p><div id="photos"></div><p id="empty">ยังไม่มีรูปในกิจกรรมนี้ เลือกรูปเพื่อเริ่มต้น</p></div>
+<div class="actions"><div class="row"><button id="save" class="primary" disabled>3. บันทึกลงโปรเจกต์</button><a href="/#activities" target="_blank" rel="noopener">ดูผลในหน้าเว็บ ↗</a></div><p id="status" class="status" role="status" aria-live="polite"></p></div>
+<div class="card"><h2>เมื่อจะอัปเดตเว็บออนไลน์</h2><ol class="steps"><li>กดบันทึกในหน้านี้ให้เรียบร้อย</li><li>กลับไปที่โฟลเดอร์โปรเจกต์ แล้วสร้างเว็บด้วย <code>npm run build</code></li><li>นำโฟลเดอร์ <code>dist</code> ชุดใหม่ขึ้นโฮสต์เดิม รูปจะมองเห็นได้จากเครื่องของผู้เข้าชมด้วย</li></ol><p class="hint">หน้านี้เปิดได้เฉพาะตอนรันเว็บในเครื่องด้วย <code>npm run dev</code> จึงไม่มีปุ่มแก้ไขสำหรับผู้ที่เปิดเว็บออนไลน์</p></div>
+</main>
+<script>
+const TOKEN=__EDITOR_TOKEN__;
+const select=document.getElementById('activity'),input=document.getElementById('files'),list=document.getElementById('photos'),save=document.getElementById('save'),status=document.getElementById('status');
+let data,photos=[],revision='',current='',dirty=false,busy=false;
+const say=message=>{status.textContent=message;};
+function lock(value){busy=value;select.disabled=value;input.disabled=value;save.disabled=value;if(value)list.querySelectorAll('button,input').forEach(el=>{el.disabled=true;});else render();}
+function mark(){dirty=true;say('มีการเปลี่ยนแปลงที่ยังไม่ได้บันทึก');}
+function loadActivity(id){current=id;photos=structuredClone(data.gallery.activities[id]||[]);revision=JSON.stringify(photos);dirty=false;document.getElementById('description').textContent=data.activities.find(a=>a.id===id).description;render();say('');}
+function render(){
+ list.replaceChildren();document.getElementById('empty').hidden=photos.length>0;
+ photos.forEach((photo,index)=>{
+  const card=document.createElement('div');card.className='photo';
+  const img=document.createElement('img');img.src=photo.data||'/'+photo.src;img.alt=photo.caption||`รูปกิจกรรมลำดับที่ ${index+1}`;card.append(img);
+  const label=document.createElement('label');label.htmlFor=`caption-${index}`;label.textContent=`คำบรรยายรูปที่ ${index+1}${index===0?' · รูปหลัก':''}`;card.append(label);
+  const caption=document.createElement('input');caption.type='text';caption.id=label.htmlFor;caption.maxLength=180;caption.value=photo.caption||'';caption.placeholder='เช่น ประสานงานกับทีมระหว่างจัดกิจกรรม';caption.addEventListener('input',()=>{photo.caption=caption.value;mark();});card.append(caption);
+  const row=document.createElement('div');row.className='row';
+  const action=(text,handler,disabled=false)=>{const b=document.createElement('button');b.type='button';b.textContent=text;b.disabled=disabled||busy;b.addEventListener('click',handler);row.append(b);};
+  action('เลื่อนไปก่อน',()=>{[photos[index-1],photos[index]]=[photos[index],photos[index-1]];mark();render();},index===0);
+  action('เลื่อนไปหลัง',()=>{[photos[index+1],photos[index]]=[photos[index],photos[index+1]];mark();render();},index===photos.length-1);
+  action('เอารูปออก',()=>{photos.splice(index,1);mark();render();});card.append(row);list.append(card);
+ });
+}
+async function convert(file){
+ if(!['image/jpeg','image/png','image/webp'].includes(file.type))throw Error(`ไฟล์ ${file.name} ไม่รองรับ กรุณาใช้ JPG, PNG หรือ WebP`);
+ if(file.size>15*1024*1024)throw Error(`ไฟล์ ${file.name} ใหญ่เกิน 15 MB`);
+ const url=URL.createObjectURL(file),img=new Image();
+ try{img.src=url;await img.decode();if(img.width*img.height>50000000)throw Error('รูปมีความละเอียดสูงเกินไป กรุณาย่อให้ต่ำกว่า 50 ล้านพิกเซล');const scale=Math.min(1,1600/Math.max(img.width,img.height)),canvas=document.createElement('canvas');canvas.width=Math.max(1,Math.round(img.width*scale));canvas.height=Math.max(1,Math.round(img.height*scale));const ctx=canvas.getContext('2d');ctx.fillStyle='#fff';ctx.fillRect(0,0,canvas.width,canvas.height);ctx.drawImage(img,0,0,canvas.width,canvas.height);return{data:canvas.toDataURL('image/jpeg',.84),caption:''};}
+ catch(error){throw Error(error.message==='The source image cannot be decoded.'?`เปิดรูป ${file.name} ไม่ได้ กรุณาเลือกไฟล์ใหม่`:error.message);}
+ finally{URL.revokeObjectURL(url);}
+}
+input.addEventListener('change',async()=>{const selected=Array.from(input.files);if(!selected.length)return;if(selected.length+photos.length>6){say('เพิ่มได้สูงสุด 6 รูปต่อกิจกรรม กรุณาเลือกรูปน้อยลง');input.value='';return;}lock(true);say('กำลังเตรียมรูป…');try{const converted=[];for(const file of selected)converted.push(await convert(file));photos.push(...converted);mark();}catch(error){say(error.message);}finally{input.value='';lock(false);render();}});
+select.addEventListener('change',()=>{if(dirty&&!confirm('ยังไม่ได้บันทึก ต้องการทิ้งการเปลี่ยนแปลงแล้วเปลี่ยนกิจกรรมหรือไม่?')){select.value=current;return;}loadActivity(select.value);});
+save.addEventListener('click',async()=>{lock(true);say('กำลังบันทึก…');try{const response=await fetch('/__activity-api',{method:'POST',headers:{'Content-Type':'application/json','X-Editor-Token':TOKEN},body:JSON.stringify({activityId:current,photos,revision})});const result=await response.json();if(!response.ok)throw Error(result.error||'บันทึกไม่สำเร็จ');photos=result.photos;revision=result.revision;data.gallery.activities[current]=structuredClone(photos);dirty=false;say('บันทึกลงโปรเจกต์แล้ว กด “ดูผลในหน้าเว็บ” หรือรีเฟรชหน้ากิจกรรมเพื่อดูรูป');}catch(error){say(error.message);}finally{lock(false);render();}});
+window.addEventListener('beforeunload',event=>{if(dirty||busy){event.preventDefault();event.returnValue='';}});
+(async()=>{try{const response=await fetch('/__activity-api',{headers:{'X-Editor-Token':TOKEN}});data=await response.json();if(!response.ok)throw Error(data.error);select.replaceChildren();for(const activity of data.activities){const option=document.createElement('option');option.value=activity.id;option.textContent=`${activity.title} (${activity.year})`;select.append(option);}if(!data.activities.length)throw Error('ยังไม่มีรายการกิจกรรมในโปรเจกต์');loadActivity(data.activities[0].id);lock(false);}catch(error){say('เปิดเครื่องมือไม่สำเร็จ: '+error.message);}})();
+</script></body></html>

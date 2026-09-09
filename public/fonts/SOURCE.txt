@@ -1,0 +1,4 @@
+Sarabun by Cadson Demak
+Source: https://github.com/google/fonts/tree/main/ofl/sarabun
+Bundled files: Sarabun-Regular.ttf and Sarabun-Bold.ttf (renamed for local use)
+License: SIL Open Font License 1.1; see OFL-Sarabun.txt
