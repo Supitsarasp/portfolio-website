@@ -1,5 +1,9 @@
 # Portfolio — Supitsara Suanngam
 
+**เว็บไลฟ์:** https://supitsarasp.github.io/portfolio-website/
+
+**ซอร์สโค้ด:** https://github.com/Supitsarasp/portfolio-website
+
 แฟ้มสะสมผลงานภาษาไทยแบบหน้าเดียว สร้างด้วย React 19, Vite 8 และ Tailwind CSS 4 เก็บข้อมูลหลักไว้ในไฟล์เดียว พร้อม Resume, เอกสารผลงาน, ใบรับรอง และเครื่องมือเพิ่มรูปกิจกรรมที่ใช้เฉพาะในเครื่อง
 
 โปรเจกต์รุ่นนี้มีข้อมูลเดิมครบ 8 โปรเจกต์ 2 กิจกรรม 7 ใบรับรอง และ 5 กลุ่มทักษะ ไม่มี `node_modules` หรือ `dist` ใน Source ZIP เพราะสร้างใหม่จาก `package-lock.json` ได้
