@@ -376,6 +376,15 @@
       "skills": ["การประสานงาน", "การทำงานเป็นทีม", "ความรับผิดชอบ"]
     },
     {
+      "id": "icdl-certificate-spreadsheets",
+      "year": "2025",
+      "title": "ICDL Certificate: Spreadsheets",
+      "organization": "ICDL Asia",
+      "role": "ผู้ผ่านการทดสอบและรับรอง (Certified Candidate)",
+      "description": "ได้รับประกาศนียบัตรรับรองทักษะความเข้าใจและการใช้เทคโนโลยีดิจิทัลมาตรฐานสากลจาก ICDL Asia ในโมดูล Spreadsheets (MS Excel 2016/6.0) ซึ่งเป็นการยืนยันสมรรถนะและความสามารถในการใช้งานโปรแกรมตารางคำนวณได้อย่างมีประสิทธิภาพ",
+      "skills": ["Microsoft Excel", "Spreadsheets", "ICDL Certification"]
+    },
+    {
       "id": "usc-student-mentor",
       "year": "2025",
       "title": "USC TEAM STAFF",
@@ -383,6 +392,19 @@
       "role": "ทีมงาน USC TEAM STAFF / พี่เลี้ยงนักศึกษา",
       "description": "ทำหน้าที่พี่เลี้ยงให้กับนักศึกษาชั้นปีที่ 1 ให้คำแนะนำและช่วยเหลือตลอดภาคเรียน ตอบข้อสงสัยเกี่ยวกับรายวิชาและการใช้ชีวิตในมหาวิทยาลัย",
       "skills": ["การสื่อสาร", "การให้คำแนะนำ", "การดูแลผู้อื่น"]
+    },
+  {
+      "id": "silvora-ar-game-tester",
+      "year": "2025",
+      "title": "ผู้ทดสอบเกมมือถือ Silvora",
+      "organization": "Silvora",
+      "role": "ผู้ทดสอบเกม Silvora (Field QA Tester)",
+      "description": "ลงพื้นที่จังหวัดอยุธยาเพื่อทดสอบเกมมือถือ AR ของ Silvora (ตัวเกมมีกลไกคล้ายคลึงกับ Pokémon GO) ตรวจสอบการทำงานของระบบประมวลผลภาพแบบเรียลไทม์ ความแม่นยำของระบบพิกัด GPS ในสถานที่จริง และการแสดงผลกราฟิก พร้อมทั้งรวบรวมและรายงานข้อผิดพลาด (Bug) เพื่อนำไปพัฒนาประสบการณ์ของผู้ใช้งาน",
+      "skills": [
+        "การทดสอบ QA ภาคสนาม", 
+        "เทคโนโลยี AR (Augmented Reality)", 
+        "การระบุตำแหน่ง GPS"
+      ]
     },
     {
       "id": "Ict-showcase-2025-reporthub",
